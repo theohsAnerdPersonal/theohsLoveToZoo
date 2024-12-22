@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+
+    <title>Love Website for Zoo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6e6; /* Light pinkish background */
+            color: #333; /* Dark text color */
+        }
+    
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #102820; /* Dark Green */
+            color: white;
+        }
+    
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #4C6444; /* Hunter Green */
+            padding: 10px;
+        }
+    
+        nav a {
+            text-decoration: none;
+            color: #CABA9C; /* Khaki */
+            font-weight: bold;
+        }
+    
+        nav a:hover {
+            color: #8A6240; /* Raw Umber */
+        }
+    
+        .section {
+            padding: 20px;
+            text-align: center;
+            background-color: #CABA9C
+            ; /* Cafe Noir */
+            color: white;
+        }
+    
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    
+        .gallery img {
+    transition: box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 47, 0.7);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(0, 255, 85, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 255, 94, 0.5);
+    }
+}
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+        }
+    
+        .timeline li {
+            margin: 10px 0;
+            background: #fff;
+            border: 1px solid #CABA9C; /* Khaki */
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #102820; /* Dark Green */
+            color: white;
+        }
+
+
+
+        button {
+    background-color: rgba(255, 105, 180, 0.8); /* Soft pink */
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 20, 147, 1); /* Deeper pink on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+button:active {
+    background-color: rgba(255, 20, 147, 0.8); /* Slightly dimmed pink */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Shadow closer to the button */
+    transform: translateY(0); /* Reset lift effect */
+}
+
+
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Zoo's Love Website</h1>
+        <p>A special place just for you ❤️</p>
+    </header>
+
+    <nav>
+        <a href="#gallery">Gallery</a>
+        <a href="#love-notes">Love Notes</a>
+        <a href="#about-us">About Us</a>
+        <a href="#special-message">MY Message</a>
+    </nav>
+
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="iCloud Photos from Theoh Masoko/IMG_0980.JPEG" alt="Memory 1">
+            <img src="iCloud Photos from Theoh Masoko/IMG_5637.JPG" alt="Memory 2">
+            <img src="iCloud Photos from Theoh Masoko/IMG_8245.JPEG" alt="Memory 3">
+            <img src="iCloud Photos from Theoh Masoko/IMG_0391_HEIC.jpg" alt="Memory 1">
+            <img src="iCloud Photos from Theoh Masoko/IMG_5413.JPEG" alt="Memory 2">
+            <img src="iCloud Photos from Theoh Masoko/IMG_7653.JPEG" alt="Memory 3">
+            <img src="iCloud Photos from Theoh Masoko/IMG_4167.JPG" alt="Memory 1">
+            <img src="iCloud Photos from Theoh Masoko/IMG_7020.JPEG" alt="Memory 2">
+            <img src="iCloud Photos from Theoh Masoko/IMG_2663.JPEG" alt="Memory 3">
+        </div>
+    </section>
+
+    <section id="love-notes" class="section">
+        <h2>❤️Love Notes❤️</h2>
+        <p id="love-note">Click the button to see a note ❤️</p>
+        <button onclick="generateLoveNote()">Generate Note</button>
+    </section>
+
+
+    <section id="about-us" class="section" style="color: black;">
+        <h2>About Us</h2>
+        <ul class="timeline">
+            <li>We started talking on WhatsApp on 06/01/2024.</li>
+            <li>We first met on 18/01/2024.</li>
+            <li>Our first date was on 01/02/2024.</li>
+            <li>Our declaration of our anniversary was on 10/02/2024.</li>
+            <li>Our first car ride was on 08/02/2024.</li>
+            <li>Our first elevator kiss was on 24/04/2024.</li>
+            <li>Our first study session together was on 25/05/2024.</li>
+            <li>Our first outing together was on 31/05/2024.</li>
+            <li>Our first time spending time in Ramotswa together was on 30/08/2024.</li>
+            <li>Our first time baking together was on 30/08/2024.</li>
+            <li>Our first time running together in Ramotswa was on 30/08/2024.</li>
+            <li>Our time celebrating your graduation was on 18/10/2024.</li>
+            <li>YET TO UPDATE!!!.</li>
+
+        </ul>
+    </section>
+    
+
+    <section id="special-message" class="section" style="background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(8px);">
+        <h2>My Message</h2>
+        <p>Dear Zoo F P S Letlhage❤️</p>
+        <p>Hey weirdo, I just wanted to say I love you so freaking much. Let this website be a reminder of how much you mean to me and how I will always be close to you. I will be just a pocket away, serving as a constant reminder of how strong our love is. You are one of the best, if not the best, things that has happened to me this year. You are my biggest achievement, and I am going to continue nurturing and growing our love!</p>
+        <p>Yours forever, Mr. Jackson aka Theo</p>
+    </section>
+    
+    
+    <section id="games-activities" class="section">
+        <h2>Activity Randomizer for Lema</h2>
+        <p>Looking for a fun activity to do? Spin the randomizer and find out what to do next with Lema!</p>
+        
+        <div id="activityDisplay" style="font-size: 18px; margin-top: 20px; font-weight: bold; color: #333;"></div>
+    
+        <script>
+            const activities = [
+                "Plan a surprise date night! 🎉",
+                "Write a heartfelt letter. 💌",
+                "Watch your favorite movie together. 🎥",
+                "Cook a meal for each other. 🍲",
+                "Take a romantic walk under the stars. 🌌",
+                "Have a cozy indoor picnic. 🧺",
+                "Dance together to your favorite song. 💃🕺",
+                "Spend the day reminiscing about your best memories. 🥰"
+            ];
+    
+            function randomizeActivity() {
+                const randomIndex = Math.floor(Math.random() * activities.length);
+                const activity = activities[randomIndex];
+                
+                // Display the activity in the section
+                const activityDisplay = document.getElementById('activityDisplay');
+                activityDisplay.textContent = `Activity for LeMa: ${activity}`;
+            }
+        </script>
+        
+        <button onclick="randomizeActivity()">Spin the Activity Randomizer</button>
+    </section>
+
+
+
+    <section id="love-quiz" class="section">
+        <h2>Love Quiz for Lema</h2>
+        <p>Test how well you know me! Click the button to get a question.</p>
+    
+        <div id="quizDisplay" style="font-size: 18px; margin-top: 20px; font-weight: bold; color: #333;"></div>
+    
+        <script>
+            const questions = [
+                "What is my favorite color?",
+                "What’s my dream vacation spot?",
+                "What’s the name of our favorite song?",
+                "What was the first gift I gave you?",
+                "What’s the most romantic thing we’ve done together?",
+                "What’s a habit of mine that you find adorable?",
+                "What’s my favorite food?",
+                "What’s a nickname you call me that I love?",
+                "What’s a memory of us that always makes me smile?",
+                "What’s the first thing you noticed about me?",
+                "What’s the funniest moment we’ve shared together?"
+            ];
+    
+            function randomizeQuestion() {
+                const randomIndex = Math.floor(Math.random() * questions.length);
+                const randomQuestion = questions[randomIndex];
+                
+                // Display the random question in the section
+                const quizDisplay = document.getElementById('quizDisplay');
+                quizDisplay.textContent = randomQuestion;
+            }
+        </script>
+        
+        <button onclick="randomizeQuestion()">Get a Love Question</button>
+    </section>
+
+
+
+    <section id="love-jar-section" class="section" style="text-align: center; padding: 20px; background-color: #ffe6f0;">
+        <h2 style="font-family: 'Cursive', sans-serif; color: #ff4081;">Love Jar ❤️</h2>
+        <p style="font-family: 'Cursive', sans-serif; font-size: 18px; color: #333;">
+            Save sweet notes and keep them close to your heart.
+        </p>
+        <button 
+            onclick="addToLoveJar()" 
+            style="background-color: #ff4081; color: white; border: none; border-radius: 20px; padding: 10px 20px; cursor: pointer; font-family: 'Cursive', sans-serif; font-size: 16px; margin-top: 10px;">
+            Add to Love Jar
+        </button>
+        <div id="love-jar" 
+            style="margin-top: 20px; padding: 20px; background: white; border-radius: 10px; font-family: 'Cursive', sans-serif; color: #333; max-width: 500px; margin: 20px auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+            <p style="color: #666; font-size: 16px;">Your sweet notes will appear here. 💌</p>
+        </div>
+    </section>
+    
+    <script>
+        const loveJar = JSON.parse(localStorage.getItem("loveJar")) || [];
+    
+        function addToLoveJar() {
+            const note = prompt("Write a sweet note for your love:");
+            if (note) {
+                loveJar.push(note);
+                localStorage.setItem("loveJar", JSON.stringify(loveJar));
+                displayLoveJar();
+            }
+        }
+    
+        function displayLoveJar() {
+            const jar = document.getElementById("love-jar");
+            jar.innerHTML = loveJar.length 
+                ? loveJar.map((note, index) => `<p>${index + 1}. ${note}</p>`).join("")
+                : `<p style="color: #666; font-size: 16px;">Your sweet notes will appear here. 💌</p>`;
+        }
+    
+        // Display the love jar on page load
+        document.addEventListener("DOMContentLoaded", displayLoveJar);
+    </script>
+    
+    
+    <section id="countdown-timer-section" class="section" style="text-align: center; padding: 20px; background-color: #fdf6f0;">
+        <h2 style="font-family: 'Cursive', sans-serif; color: #ff4081;">Countdown to Our Milestones ⏳❤️</h2>
+        <p style="font-family: 'Cursive', sans-serif; font-size: 18px; color: #333;">
+            Cherishing every moment of our journey together. 💕
+        </p>
+    
+        <!-- Milestones -->
+        <div id="milestones-display"
+            style="margin-top: 20px; padding: 20px; background: white; border-radius: 10px; font-family: 'Cursive', sans-serif; color: #333; max-width: 600px; margin: 20px auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+            <p style="color: #666; font-size: 16px;">Milestones countdowns will appear below. 💖</p>
+        </div>
+    </section>
+    
+    <script>
+        const relationshipStartDate = new Date("2024-02-10").getTime();
+        const milestones = [
+            { label: "6 Months", targetDate: new Date("2024-08-10").getTime() },
+            { label: "1 Year", targetDate: new Date("2025-02-10").getTime() },
+            { label: "1 Year 6 Months", targetDate: new Date("2025-08-10").getTime() },
+            { label: "2 Years", targetDate: new Date("2026-02-10").getTime() },
+            { label: "2 Years 6 Months", targetDate: new Date("2026-08-10").getTime() },
+            { label: "5 Years", targetDate: new Date("2029-02-10").getTime() },
+            { label: "10 Years", targetDate: new Date("2034-02-10").getTime() },
+            { label: "20 Years", targetDate: new Date("2044-02-10").getTime() },
+            { label: "Infinity", targetDate: Infinity }
+        ];
+    
+        function updateMilestonesDisplay() {
+            const now = new Date().getTime();
+            const milestonesDisplay = milestones.map(({ label, targetDate }) => {
+                if (targetDate === Infinity) {
+                    return `<p><strong>${label}:</strong> A love that lasts forever! ♾️❤️</p>`;
+                }
+    
+                const timeLeft = targetDate - now;
+    
+                if (timeLeft <= 0) {
+                    if (label === "6 Months") {
+                        return `<p><strong>${label}:</strong> Passed or Achieved! 🎉❤️</p>`;
+                    }
+                    return `<p><strong>${label}:</strong> Milestone reached! 🎉❤️</p>`;
+                } else {
+                    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    
+                    return `<p><strong>${label}:</strong> Only ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds away! ❤️</p>`;
+                }
+            });
+    
+            document.getElementById("milestones-display").innerHTML = milestonesDisplay.join("");
+        }
+    
+        // Update milestones every second
+        setInterval(updateMilestonesDisplay, 1000);
+    </script>
+    
+
+    
+    <footer>
+        <p>Made with ❤️ by theoh masoko</p>
+    </footer>
+
+    <script>
+     const loveNotes = [
+    "Zoo, you are the melody to my heart's song.",
+    "My baby Zomie, your love is my safe haven.",
+    "Weirdo, you light up my world in ways no one else can.",
+    "Zoo, just hearing your name makes my heart skip a beat.",
+    "Zomie, you’re the dream I never want to wake up from.",
+    "Weirdo, I love the way you make me laugh until my cheeks hurt.",
+    "My baby Zoo, every moment with you feels like magic.",
+    "Zomie, you are the spark that ignites my soul.",
+    "Weirdo, being with you feels like finding the treasure I didn’t know I was searching for.",
+    "Zoo, you are my greatest adventure and my sweetest reward.",
+    "Zomie, you’re not just my love; you’re my whole universe.",
+    "Weirdo, I love the way your smile feels like sunshine on my soul.",
+    "Zoo, you are my reason to believe in miracles.",
+    "My sweet Zomie, you’re the answer to every love song I’ve ever heard.",
+    "Weirdo, you’re my favorite person to share secrets with.",
+    "Zoo, loving you feels like the most natural thing in the world.",
+    "Zomie, you make even the smallest moments unforgettable.",
+    "Weirdo, your love is my constant and my forever.",
+    "Zoo, you are my anchor when life feels like a storm.",
+    "Zomie, you are the home my heart always longed for.",
+    "Weirdo, your love is the poetry my heart sings every day.",
+    "Zoo, you’re my best friend, my lover, and my soulmate.",
+    "Zomie, you make me feel like the luckiest person alive.",
+    "Weirdo, you’re the spark in my eyes and the warmth in my heart.",
+    "Zoo, you are the love I never knew I deserved.",
+    "Zomie, your laugh is my favorite melody.",
+    "Weirdo, I love every quirk and every silly thing about you.",
+    "Zoo, you make ordinary days feel extraordinary.",
+    "Zomie, your touch is my favorite kind of magic.",
+    "Weirdo, you’ve turned my life into the most beautiful story.",
+    "Zoo, being with you feels like living in a fairytale.",
+    "Zomie, you’ve shown me what it means to truly love and be loved.",
+    "Weirdo, you are the brightest star in my sky.",
+    "Zoo, you make my heart race like no one else can.",
+    "Zomie, you are my inspiration and my everything.",
+    "Weirdo, your love feels like home in the most unexpected way.",
+    "Zoo, you are the reason I look forward to tomorrow.",
+    "Zomie, you’re the sweetest part of my life, my everything.",
+    "Weirdo, I fall more in love with you every single day.",
+    "Zoo, your love is the greatest gift I’ve ever received.",
+    "Zomie, with you, I’ve found my forever happiness.",
+    "Weirdo, you’ve made my life a masterpiece of love.",
+    "Zoo, you are the rhythm to my heartbeat and the calm to my soul.",
+    "Zomie, every moment with you feels like the most precious jewel.",
+    "Weirdo, you’re my favorite person, today and always."
+];
+
+
+function generateLoveNote() {
+            const randomNote = loveNotes[Math.floor(Math.random() * loveNotes.length)];
+            const loveNoteElement = document.getElementById('love-note');
+            loveNoteElement.textContent = randomNote;
+
+            // Add haptic feedback
+            if (navigator.vibrate) {
+                navigator.vibrate(100);
+            }
+
+            // Add heart animation
+            const heart = document.createElement('div');
+            heart.textContent = '❤️';
+            heart.style.position = 'absolute';
+            heart.style.left = `${Math.random() * 100}%`;
+            heart.style.bottom = '0';
+            heart.style.fontSize = '2rem';
+            heart.style.animation = 'rise 2s ease-out forwards';
+            document.body.appendChild(heart);
+
+            heart.addEventListener('animationend', () => {
+                heart.remove();
+            });
+        }
+
+        // Heart animation CSS
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes rise {
+                0% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateY(-200px);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+
+
+
+</body>
+</html>
